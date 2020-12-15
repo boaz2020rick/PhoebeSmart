@@ -3,8 +3,7 @@ html, body {
 	height: 100%;
 	font-size: 15px;
 	font-family: Arial,'Helvetica Neue',Helvetica,'微軟正黑體';
-	background: url('../img/bg_login.jpg') center top no-repeat;
-
+	/*background: url('../img/bg_login.jpg') center top no-repeat;*/
 }
 
 .footer,.ui-widget,.TreeMenu table{
