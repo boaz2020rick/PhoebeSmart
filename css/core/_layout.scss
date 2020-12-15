@@ -1,0 +1,231 @@
+﻿.page {
+	height: 100%;
+}
+.wrap {
+	height: 100%;
+	.mainform {
+		min-height: 100%;
+		*display: table;
+		*height: 100%;
+	}
+}
+.footer {
+	position: relative;
+	margin-top: -80px;
+	padding-top: 15px;
+	height: 80px;
+	clear: both;
+	display: table;
+	width: 100%;
+	background: #f7f7f7;
+	//border: 1px solid #f00;
+	text-align: center;
+	color: #666;
+	p {
+		text-align: center;
+		line-height: 200%;
+		margin: 0;
+	}
+}
+.wrap.login {
+	background: url(../img/45degreee_fabric.png);
+}
+.logindiv {
+	position: absolute;
+	top: 50%;
+	//left: 50%;
+	//width: 400px;
+	width: 100%;
+	height: 470px;
+	margin-top: -300px;
+	//margin-left: -200px;
+	//border: 1px solid #f00;
+	h1 {
+		margin: 0 auto;
+		//width: 227px;
+		height: 87px;
+		line-height: 87px;
+		background:url(../img/logo.png) 50% no-repeat;
+		text-indent: -9999px;
+		text-align: center;
+		//border: 1px solid #f00;
+		
+	}
+	.loginbox {
+		margin: 0 auto;
+		padding: 40px 50px;
+		width: 400px;
+		background: white;
+		border-radius: 10px;
+		-moz-border-radius: 10px;
+		-webkit-border-radius: 10px;
+		-webkit-box-shadow: #ccc 2px 2px 10px;
+		-moz-box-shadow: #ccc 2px 2px 10px;
+		box-shadow: #ccc 2px 2px 10px;
+		h2 {
+			margin-top: 0px;
+			margin-bottom: 20px;
+			font-weight: bold;
+		}	
+	}
+}
+.header {
+	min-width: 100%;
+	top:0; 
+	position:fixed; 
+	_position:absolute;
+	z-index:99;  
+    _top:expression(documentElement.scrollTop);
+	-webkit-box-shadow: #acacac 0px 2px 5px;
+	-moz-box-shadow: #acacac 0px 2px 5px;
+	box-shadow: #acacac 0px 2px 5px;
+	.firm {
+		padding: 5px 0;
+		text-align: center;
+		background: url(../img/45degreee_fabric.png);
+		img {
+			max-height: 70px;
+		}
+	}
+	.info {
+		padding-left: 15px;
+		padding-right: 15px;
+		height: 40px;
+		line-height: 40px;
+		background: #555;
+		.backstageTitle {
+			float: left;
+			h1 {
+				margin: 0;
+				padding: 0;
+			}
+			span {
+				font-size: 22px;
+				letter-spacing: 1px;
+				color: #fff;
+				vertical-align: middle;
+			}
+		}
+		.backstageUser {
+			float: right;
+			height: 40px;
+			overflow: hidden;
+			.usericon {
+				font-size: 120%;
+				vertical-align: middle;
+				color: #fff;
+			}
+			.user {
+				font-size: 13px;
+				vertical-align: middle;
+				color: #fff;
+			}
+		}
+		&:after {
+			content: "";
+			height: 0;
+			display: block;
+			clear: both;
+		}
+		
+	}
+}
+.main {
+	display: table;
+	width: 100%;
+	padding-top: 130px;
+	padding-bottom: 100px;
+	.nav {
+		display: table-cell;
+		margin-bottom: 50px;
+		vertical-align: top;
+		//padding-bottom: 50px;
+		padding-left: 10px;
+		//padding-right: 10px;
+		//float: left;
+		//position: absolute;
+		width: 170px;
+		//border: 1px solid #f00;
+	}
+	.mainBox {
+		display: table-cell;
+		//margin-left: 220px;
+		vertical-align: top;
+		//border: 1px solid #f00;
+		.container {
+			max-width: 100%;
+		}
+		.heading {
+			margin: 20px 0;
+			padding: 5px 0;
+			border-bottom: 1px solid #ddd;
+			h2 {
+				margin: 0;
+				//border: 1px solid #f00;
+				vertical-align: middle;
+			}
+			.breadcrumb {
+				//border: 1px solid #f00;
+				vertical-align: middle;
+			}
+		}
+		.articleBox {
+			display: table;
+			width: 100%;
+		}
+		.TreeMenu {
+			//position: absolute;
+			display: table-cell;
+			//width: 230px;
+			vertical-align: top;
+		}
+
+		.Content {
+			//margin-left: 230px; 
+			display: table-cell;
+			//min-width: 600px;
+			vertical-align: top;
+		}
+	}
+}
+.ie7 {
+	.container {
+		width: 100%;
+	}
+	.header {
+		.firm {
+			background: #DDD;
+		}
+		.info {
+			.container {
+				width: 100%;
+				.row {
+					width: 100%;
+					.col-xs-6{
+						min-width: 49%;
+						height: 40px;
+						h1 {
+							line-height: 45px;
+							zoom: 1;
+						}
+					}
+				}
+			}
+		}
+	}
+	.main {
+		.nav {
+			z-index: 9;
+		}
+		.mainBox {
+			z-index: 1;
+		}
+	}
+}
+.ie8 {
+	.container {
+		width: 100%;
+	}
+}
+
+

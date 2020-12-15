@@ -1,0 +1,89 @@
+.PicasaPhotoView {
+	&:after {
+		content: '';
+		display: block;
+		clear: both;
+	}
+	#ablumList {
+	
+		float: left;
+		width: 160px;
+		
+	}
+	#vlightbox {
+		width: 100%;
+		padding-left: 160px;
+	}
+
+	.AlbumItem {
+		//margin: 0 auto 20px auto;
+		margin-bottom: 20px;
+		width: 92px;
+		> a {
+			display: block;
+			margin: 0;
+			padding: 7px 7px 11px 7px;
+			background: url(../img/gallery_case.gif) no-repeat;
+			> img {
+				display: block;
+				border: 1px solid #666;
+			}
+		}
+		.AlbumThumbnail {
+			width: 75px;
+			height: 75px;
+		}
+		.AlbumName {
+			font-family: \u65b0\u7d30\u660e\u9ad4;
+			font-weight: bold;
+			font-size: 13px;
+			color: #0063dc;
+		}
+	}
+}
+
+.GoogleYoutubeView {
+	.newest {
+		margin: 0 auto;
+		margin-bottom: 10px;
+		width: 640px;
+		iframe {
+			display: block;
+			
+			
+			width: 100%;
+			height: 386px;
+		}
+		.Videotitle {
+			
+			font-size: 24px;
+			
+		}
+	}
+	.list {
+		.YoutubeItem {
+			position: relative;
+			overflow: hidden;
+			display: inline-block;
+			*display: inline;
+			vertical-align: top;
+
+			iframe {
+				
+			}
+			.ItemMask {
+				position: absolute;
+				top: 0;
+				left: 0;
+				width: 100%;
+				height: 100%;
+				background: #000;
+				opacity: 0.8;
+				&:hover {
+					opacity: 0.2;
+					transform: all 0.3 ease-in-out;
+				}
+			}
+		}
+	}
+}
